@@ -419,6 +419,55 @@
             </div>
         </section>
 
+        <section class="message-section section-spacing" id="connect" aria-labelledby="connectHeading">
+            <div class="layout-shell">
+                <div class="section-intro align-center">
+                    <h2 class="content-heading" id="connectHeading">Contact Us</h2>
+                    <p class="section-lead">
+                        Have an exciting project or idea in mind? Get in touch and let's discuss it together.
+                    </p>
+                </div>
+
+                <div class="message-form-shell">
+                    <form id="messageForm" class="message-form" aria-label="Contact Form">
+                        <div class="field-grid">
+                            <div class="field-group">
+                                <label for="senderName" class="screen-reader-only">Full Name</label>
+                                <input type="text" id="senderName" name="name" class="field-control" placeholder="Enter Your Name" autocomplete="name" minlength="2" required aria-required="true">
+                                <span class="field-error" id="senderNameError" role="alert"></span>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="senderEmail" class="screen-reader-only">Email Address</label>
+                                <input type="email" id="senderEmail" name="email" class="field-control" placeholder="Enter Your Email" autocomplete="email" required aria-required="true">
+                                <span class="field-error" id="senderEmailError" role="alert"></span>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="senderWebsite" class="screen-reader-only">Website URL</label>
+                                <input type="url" id="senderWebsite" name="website" class="field-control" placeholder="Website URL" autocomplete="url" required aria-required="true">
+                                <span class="field-error" id="senderWebsiteError" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="inquiryMessage" class="screen-reader-only">Your Message</label>
+                            <textarea id="inquiryMessage" name="message" class="field-control field-control--textarea" rows="6" minlength="10" placeholder="Enter Your Message" required aria-required="true"></textarea>
+                            <span class="field-error" id="inquiryMessageError" role="alert"></span>
+                        </div>
+
+                        <div class="form-action-row align-center">
+                            <button type="submit" class="action-button action-button--primary message-submit" id="messageSubmit">
+                                <span class="submit-label">Contact Me</span>
+                                <span class="submit-loader"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                            </button>
+                        </div>
+                        <p class="submission-status" id="submissionFeedback" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="js/main.js"></script>
