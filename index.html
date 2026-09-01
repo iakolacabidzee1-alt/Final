@@ -53,7 +53,7 @@
     </header>
 
     <main id="pageContent">
-
+        
         <section class="intro-section" id="intro" aria-label="Hero Section">
             <div class="layout-shell intro-layout">
                 <div class="intro-copy">
@@ -355,7 +355,7 @@
                                 </div>
                                 <figcaption class="review-content">
                                     <blockquote class="review-quote">
-                                        <span class="quote-symbol-start">â€œ</span>Iako approaches every task with focus and responsibility. He communicates clearly, pays attention to details and is always willing to improve his work based on feedback.<span class="quote-symbol-end">â€ž</span>
+                                        <span class="quote-symbol-start">“</span>Iako approaches every task with focus and responsibility. He communicates clearly, pays attention to details and is always willing to improve his work based on feedback.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Nino Beridze</cite>
                                     <span class="reviewer-position">Project Coordinator</span>
@@ -370,7 +370,7 @@
                                 </div>
                                 <figcaption class="review-content">
                                     <blockquote class="review-quote">
-                                        <span class="quote-symbol-start">â€œ</span>Working with Iako was a smooth experience. He understands layouts well and is able to translate visual ideas into clean and responsive web pages.<span class="quote-symbol-end">â€ž</span>
+                                        <span class="quote-symbol-start">“</span>Working with Iako was a smooth experience. He understands layouts well and is able to translate visual ideas into clean and responsive web pages.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Giorgi Maisuradze</cite>
                                     <span class="reviewer-position">Web Designer</span>
@@ -385,7 +385,7 @@
                                 </div>
                                 <figcaption class="review-content">
                                     <blockquote class="review-quote">
-                                        <span class="quote-symbol-start">â€œ</span>Iako shows strong attention to interface details and usability. He is motivated to learn, asks the right questions and consistently improves the quality of his frontend work.<span class="quote-symbol-end">â€ž</span>
+                                        <span class="quote-symbol-start">“</span>Iako shows strong attention to interface details and usability. He is motivated to learn, asks the right questions and consistently improves the quality of his frontend work.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Ana Kapanadze</cite>
                                     <span class="reviewer-position">UI/UX Designer</span>
@@ -400,7 +400,7 @@
                                 </div>
                                 <figcaption class="review-content">
                                     <blockquote class="review-quote">
-                                        <span class="quote-symbol-start">â€œ</span>Iako is reliable, motivated and easy to collaborate with. He has a good understanding of frontend fundamentals and continues to develop his JavaScript and responsive design skills.<span class="quote-symbol-end">â€ž</span>
+                                        <span class="quote-symbol-start">“</span>Iako is reliable, motivated and easy to collaborate with. He has a good understanding of frontend fundamentals and continues to develop his JavaScript and responsive design skills.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Luka Danelia</cite>
                                     <span class="reviewer-position">Junior Developer</span>
@@ -467,8 +467,78 @@
                 </div>
             </div>
         </section>
-
     </main>
+
+    <footer class="portfolio-footer">
+        <div class="layout-shell align-center">
+            <nav class="footer-navigation" aria-label="Footer Navigation">
+                <ul class="footer-menu">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#profile">About Me</a></li>
+                    <li><a href="#offerings">Services</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#reviews">Testimonials</a></li>
+                    <li><a href="#connect">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-network-links" role="group" aria-label="Footer social profiles">
+                <a href="https://www.facebook.com/iako.lacabidze.1?mibextid=wwXIfr&amp;rdid=EbmkBAaQvbUBVTFb&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14p9PFjDHSf%2F%3Fmibextid%3DwwXIfr#" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Facebook profile"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/iakolatsa?stkn=M2lmbHZhbHMzOTdo&amp;utm_source=qr" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Instagram profile"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/iako-latsabidze-2b4762318/" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/lacabide72568?s=11" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's X profile"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="footer-legal">
+                <p class="copyright-note">&copy; 2026 <strong>Iako Latsabidze</strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="feedback-overlay" id="feedbackOverlay" role="dialog" aria-modal="true" aria-labelledby="feedbackHeading" aria-describedby="feedbackMessage" aria-hidden="true" hidden>
+        <div class="feedback-dialog" tabindex="-1">
+            <button class="feedback-close" id="feedbackClose" type="button" aria-label="Close dialog">&times;</button>
+            <div class="feedback-symbol-wrap">
+                <div class="feedback-symbol">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
+            <h3 class="feedback-heading" id="feedbackHeading">Message Sent!</h3>
+            <p class="feedback-message" id="feedbackMessage">
+                Thank you for getting in touch! We appreciate you contacting us.
+            </p>
+            <div class="feedback-actions">
+                <button class="action-button action-button--primary feedback-confirm" id="feedbackConfirm" type="button">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="showcase-overlay" id="showcaseOverlay" role="dialog" aria-modal="true" aria-labelledby="showcaseHeading" aria-describedby="showcaseSummary" aria-hidden="true" hidden>
+        <div class="showcase-dialog" tabindex="-1">
+            <button class="showcase-navigation showcase-previous" id="showcasePrevious" type="button" aria-label="Show previous project">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <figure class="showcase-content">
+                <div class="showcase-toolbar">
+                    <button class="showcase-close" id="showcaseClose" type="button" aria-label="Close project preview"></button>
+                </div>
+                <img src="" alt="" class="showcase-image" id="showcaseImage">
+                <figcaption class="showcase-caption">
+                    <div>
+                        <span class="showcase-category" id="showcaseCategory"></span>
+                        <h2 class="showcase-title" id="showcaseHeading"></h2>
+                        <p class="showcase-summary" id="showcaseSummary"></p>
+                    </div>
+                    <a class="showcase-full-link" id="showcaseFullLink" href="#" target="_blank" rel="noopener noreferrer">
+                        Open full size <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </figcaption>
+            </figure>
+            <button class="showcase-navigation showcase-next" id="showcaseNext" type="button" aria-label="Show next project">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
     <script src="js/cv-preview.js"></script>
