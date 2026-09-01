@@ -336,6 +336,89 @@
             </div>
         </section>
 
+        <section class="reviews-section section-spacing" id="reviews" aria-labelledby="reviewsHeading">
+            <div class="layout-shell">
+                <div class="section-intro align-center">
+                    <h2 class="content-heading" id="reviewsHeading">Testimonials</h2>
+                    <p class="section-lead">
+                        Sample reviews created to demonstrate the testimonial slider layout.
+                    </p>
+                </div>
+
+                <div class="reviews-carousel" role="region" aria-label="Testimonial Slider">
+                    <div class="reviews-track" id="reviewTrack">
+
+                        <div class="review-panel is-active" id="reviewPanel1" data-review-index="0" role="tabpanel" aria-labelledby="reviewControl1" aria-hidden="false">
+                            <figure class="review-card">
+                                <div class="reviewer-photo-frame">
+                                    <img src="images/reviewer-nino.svg" alt="Sample illustrated avatar for Nino Beridze review" class="reviewer-photo">
+                                </div>
+                                <figcaption class="review-content">
+                                    <blockquote class="review-quote">
+                                        <span class="quote-symbol-start">â€œ</span>Iako approaches every task with focus and responsibility. He communicates clearly, pays attention to details and is always willing to improve his work based on feedback.<span class="quote-symbol-end">â€ž</span>
+                                    </blockquote>
+                                    <cite class="reviewer-name">Nino Beridze</cite>
+                                    <span class="reviewer-position">Project Coordinator</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="review-panel" id="reviewPanel2" data-review-index="1" role="tabpanel" aria-labelledby="reviewControl2" aria-hidden="true">
+                            <figure class="review-card">
+                                <div class="reviewer-photo-frame">
+                                    <img src="images/reviewer-giorgi.svg" alt="Sample illustrated avatar for Giorgi Maisuradze review" class="reviewer-photo">
+                                </div>
+                                <figcaption class="review-content">
+                                    <blockquote class="review-quote">
+                                        <span class="quote-symbol-start">â€œ</span>Working with Iako was a smooth experience. He understands layouts well and is able to translate visual ideas into clean and responsive web pages.<span class="quote-symbol-end">â€ž</span>
+                                    </blockquote>
+                                    <cite class="reviewer-name">Giorgi Maisuradze</cite>
+                                    <span class="reviewer-position">Web Designer</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="review-panel" id="reviewPanel3" data-review-index="2" role="tabpanel" aria-labelledby="reviewControl3" aria-hidden="true">
+                            <figure class="review-card">
+                                <div class="reviewer-photo-frame">
+                                    <img src="images/reviewer-ana.svg" alt="Sample illustrated avatar for Ana Kapanadze review" class="reviewer-photo">
+                                </div>
+                                <figcaption class="review-content">
+                                    <blockquote class="review-quote">
+                                        <span class="quote-symbol-start">â€œ</span>Iako shows strong attention to interface details and usability. He is motivated to learn, asks the right questions and consistently improves the quality of his frontend work.<span class="quote-symbol-end">â€ž</span>
+                                    </blockquote>
+                                    <cite class="reviewer-name">Ana Kapanadze</cite>
+                                    <span class="reviewer-position">UI/UX Designer</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="review-panel" id="reviewPanel4" data-review-index="3" role="tabpanel" aria-labelledby="reviewControl4" aria-hidden="true">
+                            <figure class="review-card">
+                                <div class="reviewer-photo-frame">
+                                    <img src="images/reviewer-luka.svg" alt="Sample illustrated avatar for Luka Danelia review" class="reviewer-photo">
+                                </div>
+                                <figcaption class="review-content">
+                                    <blockquote class="review-quote">
+                                        <span class="quote-symbol-start">â€œ</span>Iako is reliable, motivated and easy to collaborate with. He has a good understanding of frontend fundamentals and continues to develop his JavaScript and responsive design skills.<span class="quote-symbol-end">â€ž</span>
+                                    </blockquote>
+                                    <cite class="reviewer-name">Luka Danelia</cite>
+                                    <span class="reviewer-position">Junior Developer</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="review-pagination" id="reviewControls" role="tablist" aria-label="Testimonial navigation dots">
+                        <button class="review-dot is-active" id="reviewControl1" data-review-target="0" type="button" role="tab" aria-controls="reviewPanel1" aria-selected="true" aria-label="Show testimonial 1"></button>
+                        <button class="review-dot" id="reviewControl2" data-review-target="1" type="button" role="tab" aria-controls="reviewPanel2" aria-selected="false" aria-label="Show testimonial 2"></button>
+                        <button class="review-dot" id="reviewControl3" data-review-target="2" type="button" role="tab" aria-controls="reviewPanel3" aria-selected="false" aria-label="Show testimonial 3"></button>
+                        <button class="review-dot" id="reviewControl4" data-review-target="3" type="button" role="tab" aria-controls="reviewPanel4" aria-selected="false" aria-label="Show testimonial 4"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="js/main.js"></script>
