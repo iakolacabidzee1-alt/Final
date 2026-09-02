@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title description">
+  <title id="title">Portfolio photo placeholder</title>
+  <desc id="description">Replace this placeholder with a personal portfolio photo.</desc>
+  <rect width="600" height="600" fill="#252525"/>
+  <circle cx="300" cy="260" r="92" fill="none" stroke="#FD6F00" stroke-width="14"/>
+  <path d="M142 516c18-105 78-164 158-164s140 59 158 164" fill="none" stroke="#FD6F00" stroke-linecap="round" stroke-width="14"/>
+  <text x="300" y="565" fill="#F8F8F8" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">ADD PERSONAL PHOTO</text>
+</svg>
