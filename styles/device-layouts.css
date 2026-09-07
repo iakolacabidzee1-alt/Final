@@ -1,0 +1,330 @@
+@media screen and (max-width: 1024px) {
+    .field-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .offerings-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .intro-summary {
+        margin-inline: auto;
+    }
+
+    .intro-heading {
+        font-size: 3.25rem;
+    }
+
+    .intro-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-legal {
+        order: 3;
+        width: 100%;
+    }
+
+    .footer-navigation {
+        order: 2;
+    }
+
+    .footer-network-links {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-footer .layout-shell {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .reviewer-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-inspector {
+        width: calc(100% - 1.5rem);
+        height: calc(100dvh - 1.5rem);
+        border-radius: 12px;
+    }
+
+    .inspector-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0, 1fr) auto;
+    }
+
+    .inspector-visual {
+        min-height: 0;
+        padding: 0.75rem;
+    }
+
+    .inspector-panel {
+        max-height: 44vh;
+        padding: 1rem;
+        overflow-y: auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 0;
+    }
+
+    .inspector-copy {
+        margin-block: 1rem;
+        padding-block: 0;
+    }
+
+    .inspector-title {
+        font-size: 1.4rem;
+    }
+
+    .inspector-summary {
+        margin-top: 0.6rem;
+        font-size: 0.8rem;
+        line-height: 1.55;
+    }
+
+    .inspector-footer {
+        gap: 0.75rem;
+    }
+
+    .inspector-topline,
+    .inspector-copy,
+    .inspector-footer,
+    .inspector-switcher {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .inspector-step {
+        padding-inline: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .review-card {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .portfolio-media:not(.portfolio-screenshot) {
+        height: 320px;
+    }
+
+    .portfolio-filters {
+        justify-content: flex-start;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .offerings-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .section-lead {
+        margin-inline: 0;
+    }
+
+    .section-intro.align-center {
+        text-align: left;
+    }
+
+    .profile-biography {
+        text-align: left;
+    }
+
+    .profile-heading {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    .profile-photo-column {
+        display: none;
+    }
+
+    .profile-layout {
+        display: block;
+    }
+
+    .profile-carousel {
+        order: 2;
+        width: min(320px, calc(100vw - 3rem));
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .intro-social-links {
+        order: 1;
+        align-self: flex-start;
+    }
+
+    .portrait-column {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .intro-summary,
+    .intro-actions {
+        display: none;
+    }
+
+    .intro-heading {
+        font-size: 2.75rem;
+    }
+
+    .intro-copy {
+        align-items: flex-start;
+    }
+
+    .intro-layout {
+        gap: 1.25rem;
+        text-align: left;
+    }
+
+    .mobile-cv-action {
+        display: block;
+        margin-top: 0.75rem;
+    }
+
+    .navigation-anchor {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .navigation-menu {
+        flex-direction: column;
+        gap: 1.75rem;
+        text-align: center;
+    }
+
+    .primary-navigation.is-open {
+        transform: translateX(0);
+    }
+
+    .primary-navigation {
+        position: fixed;
+        top: var(--topbar-size);
+        left: 0;
+        width: 100%;
+        height: calc(100vh - var(--topbar-size));
+        background: rgba(25, 25, 25, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-top: 1px solid var(--line-dark);
+        z-index: 999;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .navigation-toggle {
+        display: flex;
+    }
+
+    .header-controls .action-button {
+        display: none;
+    }
+
+    .content-heading {
+        font-size: 2.2rem;
+    }
+
+    .section-spacing {
+        padding-block: 4rem;
+    }
+
+    :root {
+        --topbar-size: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feedback-dialog {
+        padding: 2.5rem 1.25rem 2rem;
+    }
+
+    .review-card {
+        padding-inline: 1.1rem;
+    }
+
+    .portfolio-media:not(.portfolio-screenshot) {
+        height: 290px;
+    }
+
+    .message-submit {
+        width: 100%;
+    }
+
+    .category-control {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .portfolio-filters {
+        gap: 0.5rem;
+    }
+
+    .profile-carousel {
+        width: min(320px, calc(100vw - 2rem));
+    }
+
+    .intro-heading {
+        font-size: clamp(2rem, 11vw, 2.35rem);
+    }
+
+    .content-heading {
+        font-size: 1.85rem;
+    }
+
+    .layout-shell {
+        padding-inline: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 560px) {
+    .navigation-menu {
+        padding-block: 1.5rem;
+    }
+
+    .primary-navigation {
+        justify-content: flex-start;
+    }
+}

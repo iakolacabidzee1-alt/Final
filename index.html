@@ -15,12 +15,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="styles/portfolio-theme.css">
+    <link rel="stylesheet" href="styles/device-layouts.css">
 </head>
 <body>
     <a class="content-skip" href="#pageContent">Skip to main content</a>
@@ -37,12 +37,12 @@
                     <li class="navigation-entry"><a href="#work" class="navigation-anchor">Projects</a></li>
                     <li class="navigation-entry"><a href="#reviews" class="navigation-anchor">Testimonials</a></li>
                     <li class="navigation-entry"><a href="#connect" class="navigation-anchor">Contact</a></li>
-                    <li class="navigation-entry mobile-cv-action"><a href="assets/Iako_Latsabidze_CV.pdf" target="_blank" rel="noopener noreferrer" class="action-button action-button--primary cv-preview-link">Download CV</a></li>
+                    <li class="navigation-entry mobile-cv-action"><a href="documents/iako-latsabidze-resume.pdf" target="_blank" rel="noopener noreferrer" class="action-button action-button--primary cv-preview-link">View Resume</a></li>
                 </ul>
             </nav>
 
             <div class="header-controls">
-                <a href="assets/Iako_Latsabidze_CV.pdf" target="_blank" rel="noopener noreferrer" class="action-button action-button--primary cv-preview-link" aria-label="Open Iako Latsabidze CV preview">Download CV</a>
+                <a href="documents/iako-latsabidze-resume.pdf" target="_blank" rel="noopener noreferrer" class="action-button action-button--primary cv-preview-link" aria-label="Open Iako Latsabidze resume workspace">View Resume</a>
                 <button class="navigation-toggle" id="navigationToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span class="toggle-line"></span>
                     <span class="toggle-line"></span>
@@ -74,21 +74,21 @@
                 <div class="portrait-column">
                     <div class="profile-carousel" id="profileCarousel" role="region" aria-label="Iako Latsabidze photo carousel" aria-roledescription="carousel">
                         <div class="portrait-slide is-active" aria-hidden="false">
-                            <img src="images/iako-hero-1.jpeg" alt="Iako Latsabidze portfolio portrait 1" class="portrait-image">
+                            <img src="media/profile/portrait-main.jpeg" alt="Iako Latsabidze portfolio portrait 1" class="portrait-image">
                         </div>
                         <div class="portrait-slide" aria-hidden="true">
-                            <img src="images/iako-hero-2.png" alt="Iako Latsabidze portfolio portrait 2" class="portrait-image">
+                            <img src="media/profile/frontend-workspace.png" alt="Iako Latsabidze portfolio portrait 2" class="portrait-image">
                         </div>
                         <div class="portrait-slide" aria-hidden="true">
-                            <img src="images/iako-hero-3.png" alt="Iako Latsabidze portfolio portrait 3" class="portrait-image">
+                            <img src="media/profile/code-detail.png" alt="Iako Latsabidze portfolio portrait 3" class="portrait-image">
                         </div>
                     </div>
 
                     <div class="intro-social-links" role="group" aria-label="Social media profiles">
-                        <a href="https://www.facebook.com/iako.lacabidze.1?mibextid=wwXIfr&amp;rdid=EbmkBAaQvbUBVTFb&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14p9PFjDHSf%2F%3Fmibextid%3DwwXIfr#" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Facebook profile"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/iakolatsa?stkn=M2lmbHZhbHMzOTdo&amp;utm_source=qr" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Instagram profile"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/iako-latsabidze-2b4762318/" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://x.com/lacabide72568?s=11" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's X profile"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/iako.lacabidze.1?mibextid=wwXIfr&amp;rdid=EbmkBAaQvbUBVTFb&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14p9PFjDHSf%2F%3Fmibextid%3DwwXIfr#" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Facebook profile"><img src="media/social/facebook-mark.svg" alt=""></a>
+                        <a href="https://www.instagram.com/iakolatsa?stkn=M2lmbHZhbHMzOTdo&amp;utm_source=qr" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Instagram profile"><img src="media/social/instagram-mark.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/iako-latsabidze-2b4762318/" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's LinkedIn profile"><img src="media/social/linkedin-mark.svg" alt=""></a>
+                        <a href="https://x.com/lacabide72568?s=11" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's X profile"><img src="media/social/twitter-mark.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="layout-shell profile-layout">
                 <div class="profile-photo-column">
                     <div class="profile-photo-frame">
-                        <img src="images/iako-hero-1.jpeg" alt="Iako Latsabidze profile portrait" class="profile-photo">
+                        <img src="media/profile/portrait-main.jpeg" alt="Iako Latsabidze profile portrait" class="profile-photo">
                     </div>
                 </div>
 
@@ -161,33 +161,18 @@
 
         <section class="offerings-section section-spacing" id="offerings" aria-labelledby="offeringsHeading">
             <div class="layout-shell">
-                <div class="section-intro align-center">
+                <header class="section-intro align-center">
                     <h2 class="content-heading" id="offeringsHeading">Services</h2>
                     <p class="section-lead">
                         Practical frontend services focused on responsive layouts, clear structure and reliable user experiences.
                     </p>
-                </div>
+                </header>
 
                 <div class="offerings-grid">
                     
                     <article class="offering-card">
                         <div class="offering-symbol" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="4" y="6" width="26" height="24" rx="3" stroke="#FD6F00" stroke-width="2.5"/>
-                                <path d="M4 13H30" stroke="#FD6F00" stroke-width="2.5"/>
-                                <circle cx="8" cy="9.5" r="1" fill="#FD6F00"/>
-                                <circle cx="12" cy="9.5" r="1" fill="#FD6F00"/>
-                                <circle cx="16" cy="9.5" r="1" fill="#FD6F00"/>
-                                <rect x="18" y="18" width="26" height="24" rx="3" fill="#F8F8F8" stroke="#FD6F00" stroke-width="2.5"/>
-                                <path d="M18 25H44" stroke="#FD6F00" stroke-width="2.5"/>
-                                <circle cx="22" cy="21.5" r="1" fill="#FD6F00"/>
-                                <circle cx="26" cy="21.5" r="1" fill="#FD6F00"/>
-                                <circle cx="30" cy="21.5" r="1" fill="#FD6F00"/>
-                                <rect x="22" y="29" width="8" height="8" rx="1.5" stroke="#FD6F00" stroke-width="2"/>
-                                <path d="M34 29H40" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M34 33H40" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M34 37H38" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                            <img src="media/service-icons/frontend-window.svg" alt="" width="48" height="48">
                         </div>
                         <h3 class="offering-title">Frontend Development</h3>
                         <p class="offering-copy">
@@ -197,18 +182,7 @@
 
                     <article class="offering-card">
                         <div class="offering-symbol" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="4" y="6" width="40" height="28" rx="3" stroke="#FD6F00" stroke-width="2.5"/>
-                                <path d="M4 14H44" stroke="#FD6F00" stroke-width="2.5"/>
-                                <circle cx="9" cy="10" r="1" fill="#FD6F00"/>
-                                <circle cx="13" cy="10" r="1" fill="#FD6F00"/>
-                                <circle cx="17" cy="10" r="1" fill="#FD6F00"/>
-                                <rect x="9" y="19" width="12" height="10" rx="1.5" stroke="#FD6F00" stroke-width="2"/>
-                                <path d="M26 19H39" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M26 24H39" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M26 29H34" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M20 34L17 42H31L28 34" stroke="#FD6F00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <img src="media/service-icons/responsive-screen.svg" alt="" width="48" height="48">
                         </div>
                         <h3 class="offering-title">Responsive Web Design</h3>
                         <p class="offering-copy">
@@ -218,13 +192,7 @@
 
                     <article class="offering-card">
                         <div class="offering-symbol" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="12" y="4" width="24" height="40" rx="4" stroke="#FD6F00" stroke-width="2.5"/>
-                                <path d="M20 8H28" stroke="#FD6F00" stroke-width="2.5" stroke-linecap="round"/>
-                                <circle cx="24" cy="39" r="1.5" fill="#FD6F00"/>
-                                <line x1="16" y1="14" x2="32" y2="30" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                                <line x1="32" y1="14" x2="16" y2="30" stroke="#FD6F00" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                            <img src="media/service-icons/interface-phone.svg" alt="" width="48" height="48">
                         </div>
                         <h3 class="offering-title">Website UI Implementation</h3>
                         <p class="offering-copy">
@@ -234,17 +202,7 @@
 
                     <article class="offering-card">
                         <div class="offering-symbol" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="4" y="6" width="40" height="28" rx="3" stroke="#FD6F00" stroke-width="2.5"/>
-                                <path d="M4 14H44" stroke="#FD6F00" stroke-width="2.5"/>
-                                <circle cx="9" cy="10" r="1.2" fill="#FD6F00"/>
-                                <circle cx="14" cy="10" r="1.2" fill="#FD6F00"/>
-                                <circle cx="19" cy="10" r="1.2" fill="#FD6F00"/>
-                                <path d="M9 28L18 20L27 28" stroke="#FD6F00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M25 25L30 21L39 28" stroke="#FD6F00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="15" cy="18" r="1.5" fill="#FD6F00"/>
-                                <path d="M12 40L24 34L36 40" stroke="#FD6F00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <img src="media/service-icons/maintenance-layout.svg" alt="" width="48" height="48">
                         </div>
                         <h3 class="offering-title">Website Maintenance</h3>
                         <p class="offering-copy">
@@ -257,176 +215,176 @@
 
         <section class="portfolio-section section-spacing" id="work" aria-labelledby="workHeading">
             <div class="layout-shell">
-                <div class="section-intro align-center">
+                <header class="section-intro align-center">
                     <h2 class="content-heading" id="workHeading">My Projects</h2>
                     <p class="section-lead">
                         A selection of responsive websites, dashboards, app interfaces and visual design concepts.
                     </p>
-                </div>
+                </header>
 
-                <div class="portfolio-filters" id="workFilters" role="group" aria-label="Filter projects by category">
+                <nav class="portfolio-filters" id="workFilters" aria-label="Filter projects by category">
                     <button class="category-control is-active" data-work-filter="all" type="button" aria-pressed="true">All</button>
                     <button class="category-control" data-work-filter="ui-ux" type="button" aria-pressed="false">UI/UX</button>
                     <button class="category-control" data-work-filter="web-design" type="button" aria-pressed="false">Web Design</button>
                     <button class="category-control" data-work-filter="app-design" type="button" aria-pressed="false">App Design</button>
                     <button class="category-control" data-work-filter="graphic-design" type="button" aria-pressed="false">Graphic Design</button>
-                </div>
+                </nav>
 
-                <div class="portfolio-grid" id="workGallery">
+                <section class="portfolio-grid" id="workGallery" aria-label="Project gallery">
                     <article class="portfolio-item" data-work-category="web-design" data-work-summary="Modern Georgian restaurant landing page with menu preview, reservations and contact information.">
-                        <button class="portfolio-media portfolio-screenshot portfolio-preview-button" type="button" data-showcase-trigger aria-label="View Tbilisi Corner Restaurant Website project image">
-                            <img src="images/projects/tbilisi-corner.webp" alt="Tbilisi Corner Restaurant website interface" class="portfolio-image" loading="lazy" decoding="async">
+                        <button class="portfolio-media portfolio-screenshot project-launcher" type="button" data-inspect-project aria-label="View Tbilisi Corner Restaurant Website project image">
+                            <img src="media/showcase/restaurant-home.webp" alt="Tbilisi Corner Restaurant website interface" class="portfolio-image" loading="lazy" decoding="async">
                         </button>
-                        <div class="portfolio-meta">
+                        <header class="portfolio-meta">
                             <span class="portfolio-category">Web Design</span>
                             <h3 class="portfolio-title">Tbilisi Corner Restaurant Website</h3>
-                        </div>
+                        </header>
                     </article>
 
                     <article class="portfolio-item" data-work-category="web-design" data-work-summary="Travel landing page focused on tours, destinations and mountain experiences in Georgia.">
-                        <button class="portfolio-media portfolio-screenshot portfolio-preview-button" type="button" data-showcase-trigger aria-label="View Kazbegi Travel Experience project image">
-                            <img src="images/projects/kazbegi-travel.webp" alt="Kazbegi Travel Experience website interface" class="portfolio-image" loading="lazy" decoding="async">
+                        <button class="portfolio-media portfolio-screenshot project-launcher" type="button" data-inspect-project aria-label="View Kazbegi Travel Experience project image">
+                            <img src="media/showcase/mountain-travel.webp" alt="Kazbegi Travel Experience website interface" class="portfolio-image" loading="lazy" decoding="async">
                         </button>
-                        <div class="portfolio-meta">
+                        <header class="portfolio-meta">
                             <span class="portfolio-category">Web Design</span>
                             <h3 class="portfolio-title">Kazbegi Travel Experience</h3>
-                        </div>
+                        </header>
                     </article>
 
                     <article class="portfolio-item" data-work-category="ui-ux" data-work-summary="Simple personal finance dashboard with spending overview, transactions and savings progress.">
-                        <button class="portfolio-media portfolio-screenshot portfolio-preview-button" type="button" data-showcase-trigger aria-label="View Nexa Personal Finance Dashboard project image">
-                            <img src="images/projects/nexa-dashboard.webp" alt="Nexa Personal Finance Dashboard interface" class="portfolio-image" loading="lazy" decoding="async">
+                        <button class="portfolio-media portfolio-screenshot project-launcher" type="button" data-inspect-project aria-label="View Nexa Personal Finance Dashboard project image">
+                            <img src="media/showcase/finance-dashboard.webp" alt="Nexa Personal Finance Dashboard interface" class="portfolio-image" loading="lazy" decoding="async">
                         </button>
-                        <div class="portfolio-meta">
+                        <header class="portfolio-meta">
                             <span class="portfolio-category">UI/UX</span>
                             <h3 class="portfolio-title">Nexa Personal Finance Dashboard</h3>
-                        </div>
+                        </header>
                     </article>
 
                     <article class="portfolio-item" data-work-category="web-design" data-work-summary="Minimal interior design studio website with project showcase and consultation section.">
-                        <button class="portfolio-media portfolio-screenshot portfolio-preview-button" type="button" data-showcase-trigger aria-label="View Forma Interior Studio Website project image">
-                            <img src="images/projects/forma-interior.webp" alt="Forma Interior Studio website interface" class="portfolio-image" loading="lazy" decoding="async">
+                        <button class="portfolio-media portfolio-screenshot project-launcher" type="button" data-inspect-project aria-label="View Forma Interior Studio Website project image">
+                            <img src="media/showcase/interior-studio.webp" alt="Forma Interior Studio website interface" class="portfolio-image" loading="lazy" decoding="async">
                         </button>
-                        <div class="portfolio-meta">
+                        <header class="portfolio-meta">
                             <span class="portfolio-category">Web Design</span>
                             <h3 class="portfolio-title">Forma Interior Studio Website</h3>
-                        </div>
+                        </header>
                     </article>
 
                     <article class="portfolio-item" data-work-category="app-design" data-work-summary="Fitness tracking interface with workout progress, activity summary and weekly goals.">
-                        <button class="portfolio-media portfolio-screenshot portfolio-preview-button" type="button" data-showcase-trigger aria-label="View MoveFit Fitness Tracker project image">
-                            <img src="images/projects/movefit-tracker.webp" alt="MoveFit Fitness Tracker app interface" class="portfolio-image" loading="lazy" decoding="async">
+                        <button class="portfolio-media portfolio-screenshot project-launcher" type="button" data-inspect-project aria-label="View MoveFit Fitness Tracker project image">
+                            <img src="media/showcase/fitness-tracker.webp" alt="MoveFit Fitness Tracker app interface" class="portfolio-image" loading="lazy" decoding="async">
                         </button>
-                        <div class="portfolio-meta">
+                        <header class="portfolio-meta">
                             <span class="portfolio-category">App Design</span>
                             <h3 class="portfolio-title">MoveFit Fitness Tracker</h3>
-                        </div>
+                        </header>
                     </article>
 
                     <article class="portfolio-item" data-work-category="graphic-design" data-work-summary="Modern fashion e-commerce concept with product collections, featured items and promotional sections.">
-                        <button class="portfolio-media portfolio-screenshot portfolio-preview-button" type="button" data-showcase-trigger aria-label="View Luma Fashion Store Concept project image">
-                            <img src="images/projects/luma-fashion.webp" alt="Luma Fashion Store concept interface" class="portfolio-image" loading="lazy" decoding="async">
+                        <button class="portfolio-media portfolio-screenshot project-launcher" type="button" data-inspect-project aria-label="View Luma Fashion Store Concept project image">
+                            <img src="media/showcase/fashion-store.webp" alt="Luma Fashion Store concept interface" class="portfolio-image" loading="lazy" decoding="async">
                         </button>
-                        <div class="portfolio-meta">
+                        <header class="portfolio-meta">
                             <span class="portfolio-category">Graphic Design</span>
                             <h3 class="portfolio-title">Luma Fashion Store Concept</h3>
-                        </div>
+                        </header>
                     </article>
-                </div>
+                </section>
             </div>
         </section>
 
         <section class="reviews-section section-spacing" id="reviews" aria-labelledby="reviewsHeading">
             <div class="layout-shell">
-                <div class="section-intro align-center">
+                <header class="section-intro align-center">
                     <h2 class="content-heading" id="reviewsHeading">Testimonials</h2>
                     <p class="section-lead">
                         Sample reviews created to demonstrate the testimonial slider layout.
                     </p>
-                </div>
+                </header>
 
                 <div class="reviews-carousel" role="region" aria-label="Testimonial Slider">
                     <div class="reviews-track" id="reviewTrack">
 
                         <div class="review-panel is-active" id="reviewPanel1" data-review-index="0" role="tabpanel" aria-labelledby="reviewControl1" aria-hidden="false">
-                            <figure class="review-card">
+                            <article class="review-card">
                                 <div class="reviewer-photo-frame">
-                                    <img src="images/reviewer-nino.svg" alt="Sample illustrated avatar for Nino Beridze review" class="reviewer-photo">
+                                    <img src="media/reviews/nino-beridze.webp" alt="Portrait representing Nino Beridze's sample review" class="reviewer-photo">
                                 </div>
-                                <figcaption class="review-content">
+                                <div class="review-content">
                                     <blockquote class="review-quote">
                                         <span class="quote-symbol-start">“</span>Iako approaches every task with focus and responsibility. He communicates clearly, pays attention to details and is always willing to improve his work based on feedback.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Nino Beridze</cite>
                                     <span class="reviewer-position">Project Coordinator</span>
-                                </figcaption>
-                            </figure>
+                                </div>
+                            </article>
                         </div>
 
                         <div class="review-panel" id="reviewPanel2" data-review-index="1" role="tabpanel" aria-labelledby="reviewControl2" aria-hidden="true">
-                            <figure class="review-card">
+                            <article class="review-card">
                                 <div class="reviewer-photo-frame">
-                                    <img src="images/reviewer-giorgi.svg" alt="Sample illustrated avatar for Giorgi Maisuradze review" class="reviewer-photo">
+                                    <img src="media/reviews/giorgi-maisuradze.webp" alt="Portrait representing Giorgi Maisuradze's sample review" class="reviewer-photo">
                                 </div>
-                                <figcaption class="review-content">
+                                <div class="review-content">
                                     <blockquote class="review-quote">
                                         <span class="quote-symbol-start">“</span>Working with Iako was a smooth experience. He understands layouts well and is able to translate visual ideas into clean and responsive web pages.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Giorgi Maisuradze</cite>
                                     <span class="reviewer-position">Web Designer</span>
-                                </figcaption>
-                            </figure>
+                                </div>
+                            </article>
                         </div>
 
                         <div class="review-panel" id="reviewPanel3" data-review-index="2" role="tabpanel" aria-labelledby="reviewControl3" aria-hidden="true">
-                            <figure class="review-card">
+                            <article class="review-card">
                                 <div class="reviewer-photo-frame">
-                                    <img src="images/reviewer-ana.svg" alt="Sample illustrated avatar for Ana Kapanadze review" class="reviewer-photo">
+                                    <img src="media/reviews/ana-kapanadze.jpg" alt="Portrait representing Ana Kapanadze's sample review" class="reviewer-photo">
                                 </div>
-                                <figcaption class="review-content">
+                                <div class="review-content">
                                     <blockquote class="review-quote">
                                         <span class="quote-symbol-start">“</span>Iako shows strong attention to interface details and usability. He is motivated to learn, asks the right questions and consistently improves the quality of his frontend work.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Ana Kapanadze</cite>
                                     <span class="reviewer-position">UI/UX Designer</span>
-                                </figcaption>
-                            </figure>
+                                </div>
+                            </article>
                         </div>
 
                         <div class="review-panel" id="reviewPanel4" data-review-index="3" role="tabpanel" aria-labelledby="reviewControl4" aria-hidden="true">
-                            <figure class="review-card">
+                            <article class="review-card">
                                 <div class="reviewer-photo-frame">
-                                    <img src="images/reviewer-luka.svg" alt="Sample illustrated avatar for Luka Danelia review" class="reviewer-photo">
+                                    <img src="media/reviews/luka-danelia.webp" alt="Portrait representing Luka Danelia's sample review" class="reviewer-photo">
                                 </div>
-                                <figcaption class="review-content">
+                                <div class="review-content">
                                     <blockquote class="review-quote">
                                         <span class="quote-symbol-start">“</span>Iako is reliable, motivated and easy to collaborate with. He has a good understanding of frontend fundamentals and continues to develop his JavaScript and responsive design skills.<span class="quote-symbol-end">„</span>
                                     </blockquote>
                                     <cite class="reviewer-name">Luka Danelia</cite>
                                     <span class="reviewer-position">Junior Developer</span>
-                                </figcaption>
-                            </figure>
+                                </div>
+                            </article>
                         </div>
                     </div>
 
-                    <div class="review-pagination" id="reviewControls" role="tablist" aria-label="Testimonial navigation dots">
+                    <nav class="review-pagination" id="reviewControls" role="tablist" aria-label="Testimonial navigation dots">
                         <button class="review-dot is-active" id="reviewControl1" data-review-target="0" type="button" role="tab" aria-controls="reviewPanel1" aria-selected="true" aria-label="Show testimonial 1"></button>
                         <button class="review-dot" id="reviewControl2" data-review-target="1" type="button" role="tab" aria-controls="reviewPanel2" aria-selected="false" aria-label="Show testimonial 2"></button>
                         <button class="review-dot" id="reviewControl3" data-review-target="2" type="button" role="tab" aria-controls="reviewPanel3" aria-selected="false" aria-label="Show testimonial 3"></button>
                         <button class="review-dot" id="reviewControl4" data-review-target="3" type="button" role="tab" aria-controls="reviewPanel4" aria-selected="false" aria-label="Show testimonial 4"></button>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </section>
 
         <section class="message-section section-spacing" id="connect" aria-labelledby="connectHeading">
             <div class="layout-shell">
-                <div class="section-intro align-center">
+                <header class="section-intro align-center">
                     <h2 class="content-heading" id="connectHeading">Contact Us</h2>
                     <p class="section-lead">
                         Have an exciting project or idea in mind? Get in touch and let's discuss it together.
                     </p>
-                </div>
+                </header>
 
                 <div class="message-form-shell">
                     <form id="messageForm" class="message-form" aria-label="Contact Form">
@@ -483,10 +441,10 @@
             </nav>
 
             <div class="footer-network-links" role="group" aria-label="Footer social profiles">
-                <a href="https://www.facebook.com/iako.lacabidze.1?mibextid=wwXIfr&amp;rdid=EbmkBAaQvbUBVTFb&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14p9PFjDHSf%2F%3Fmibextid%3DwwXIfr#" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Facebook profile"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/iakolatsa?stkn=M2lmbHZhbHMzOTdo&amp;utm_source=qr" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Instagram profile"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/iako-latsabidze-2b4762318/" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://x.com/lacabide72568?s=11" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's X profile"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/iako.lacabidze.1?mibextid=wwXIfr&amp;rdid=EbmkBAaQvbUBVTFb&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14p9PFjDHSf%2F%3Fmibextid%3DwwXIfr#" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Facebook profile"><img src="media/social/facebook-mark.svg" alt=""></a>
+                <a href="https://www.instagram.com/iakolatsa?stkn=M2lmbHZhbHMzOTdo&amp;utm_source=qr" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's Instagram profile"><img src="media/social/instagram-mark.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/iako-latsabidze-2b4762318/" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's LinkedIn profile"><img src="media/social/linkedin-mark.svg" alt=""></a>
+                <a href="https://x.com/lacabide72568?s=11" class="network-link" target="_blank" rel="noopener noreferrer" aria-label="Iako's X profile"><img src="media/social/twitter-mark.svg" alt=""></a>
             </div>
 
             <div class="footer-legal">
@@ -513,34 +471,41 @@
         </div>
     </div>
 
-    <div class="showcase-overlay" id="showcaseOverlay" role="dialog" aria-modal="true" aria-labelledby="showcaseHeading" aria-describedby="showcaseSummary" aria-hidden="true" hidden>
-        <div class="showcase-dialog" tabindex="-1">
-            <button class="showcase-navigation showcase-previous" id="showcasePrevious" type="button" aria-label="Show previous project">
-                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-            </button>
-            <figure class="showcase-content">
-                <div class="showcase-toolbar">
-                    <button class="showcase-close" id="showcaseClose" type="button" aria-label="Close project preview"></button>
+    <dialog class="project-inspector" id="projectInspector" aria-labelledby="inspectorTitle" aria-describedby="inspectorSummary">
+        <div class="inspector-layout">
+            <div class="inspector-visual">
+                <img src="" alt="" class="inspector-image" id="inspectorImage">
+            </div>
+            <aside class="inspector-panel">
+                <div class="inspector-topline">
+                    <span class="inspector-label">Selected project</span>
+                    <button class="inspector-dismiss" id="inspectorDismiss" type="button" aria-label="Close project inspector">
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
                 </div>
-                <img src="" alt="" class="showcase-image" id="showcaseImage">
-                <figcaption class="showcase-caption">
-                    <div>
-                        <span class="showcase-category" id="showcaseCategory"></span>
-                        <h2 class="showcase-title" id="showcaseHeading"></h2>
-                        <p class="showcase-summary" id="showcaseSummary"></p>
+                <div class="inspector-copy">
+                    <span class="inspector-category" id="inspectorCategory"></span>
+                    <h2 class="inspector-title" id="inspectorTitle"></h2>
+                    <p class="inspector-summary" id="inspectorSummary"></p>
+                </div>
+                <div class="inspector-footer">
+                    <div class="inspector-switcher" aria-label="Browse projects">
+                        <button class="inspector-step" id="inspectorPrevious" type="button">
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Previous
+                        </button>
+                        <button class="inspector-step" id="inspectorNext" type="button">
+                            Next <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
                     </div>
-                    <a class="showcase-full-link" id="showcaseFullLink" href="#" target="_blank" rel="noopener noreferrer">
-                        Open full size <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    <a class="inspector-source" id="inspectorFullLink" href="#" target="_blank" rel="noopener noreferrer">
+                        View original image <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                     </a>
-                </figcaption>
-            </figure>
-            <button class="showcase-navigation showcase-next" id="showcaseNext" type="button" aria-label="Show next project">
-                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </button>
+                </div>
+            </aside>
         </div>
-    </div>
+    </dialog>
 
-    <script src="js/main.js"></script>
-    <script src="js/cv-preview.js"></script>
+    <script src="scripts/site-controller.js"></script>
+    <script src="scripts/resume-preview.js"></script>
 </body>
 </html>
