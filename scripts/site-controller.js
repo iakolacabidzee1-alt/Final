@@ -10,6 +10,7 @@
             this.delay = delay;
             this.advance = advance;
             this.timerId = null;
+            this.pauseTargets = new Set();
         }
 
         halt = () => {
@@ -20,7 +21,7 @@
 
         schedule = () => {
             this.halt();
-            if (document.hidden) return;
+            if (document.hidden || this.pauseTargets.size > 0) return;
 
             this.timerId = window.setTimeout(() => {
                 this.advance();
@@ -35,11 +36,25 @@
         pauseWith(element) {
             if (!element) return;
 
-            element.addEventListener('pointerenter', this.halt);
-            element.addEventListener('pointerleave', this.schedule);
-            element.addEventListener('focusin', this.halt);
+            const pointerPause = {};
+            const focusPause = {};
+            element.addEventListener('pointerenter', () => {
+                this.pauseTargets.add(pointerPause);
+                this.halt();
+            });
+            element.addEventListener('pointerleave', () => {
+                this.pauseTargets.delete(pointerPause);
+                this.schedule();
+            });
+            element.addEventListener('focusin', () => {
+                this.pauseTargets.add(focusPause);
+                this.halt();
+            });
             element.addEventListener('focusout', (event) => {
-                if (!element.contains(event.relatedTarget)) this.schedule();
+                if (!element.contains(event.relatedTarget)) {
+                    this.pauseTargets.delete(focusPause);
+                    this.schedule();
+                }
             });
         }
 
@@ -96,14 +111,13 @@
             if (this.overlay.hidden) return;
 
             this.overlay.classList.remove('is-active');
-            this.overlay.setAttribute('aria-hidden', 'true');
 
             this.hideTimer = window.setTimeout(() => {
                 this.overlay.hidden = true;
+                this.overlay.setAttribute('aria-hidden', 'true');
                 this.updatePageLock();
+                if (this.lastFocus instanceof HTMLElement) this.lastFocus.focus();
             }, this.closeDelay);
-
-            if (this.lastFocus instanceof HTMLElement) this.lastFocus.focus();
         };
 
         connectCloseButtons(buttons) {
@@ -117,7 +131,7 @@
             const first = focusable.at(0);
             const last = focusable.at(-1);
 
-            if (event.shiftKey && document.activeElement === first) {
+            if (event.shiftKey && (document.activeElement === first || !focusable.includes(document.activeElement))) {
                 event.preventDefault();
                 last.focus();
             } else if (!event.shiftKey && document.activeElement === last) {
@@ -232,9 +246,8 @@
                 this.dialog.close();
                 this.image?.removeAttribute('src');
                 this.updatePageLock();
+                if (this.returnTarget instanceof HTMLElement) this.returnTarget.focus();
             }, 220);
-
-            if (this.returnTarget instanceof HTMLElement) this.returnTarget.focus();
         };
     }
 
@@ -302,7 +315,7 @@
             }
 
             const links = findAll('.navigation-anchor');
-            const sections = findAll('main section[id]');
+            const sections = links.map((link) => document.getElementById(link.hash.slice(1))).filter(Boolean);
             let framePending = false;
 
             const paintNavigationState = () => {
@@ -551,6 +564,7 @@
                 const error = find('#' + field.id + 'Error');
                 const invalid = Boolean(message);
                 field.classList.toggle('has-error', invalid);
+                field.setAttribute('aria-invalid', String(invalid));
 
                 if (error) {
                     error.textContent = message;
@@ -560,11 +574,22 @@
 
             fields.forEach((field) => {
                 field.addEventListener('invalid', () => showFieldState(field, field.validationMessage));
-                field.addEventListener('input', () => showFieldState(field));
+                field.addEventListener('input', () => {
+                    field.setCustomValidity('');
+                    showFieldState(field);
+                });
             });
 
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
+
+                fields.forEach((field) => {
+                    const value = field.value.trim();
+                    const tooShort = field.minLength > 0 && value.length < field.minLength;
+                    field.setCustomValidity(field.required && (!value || tooShort)
+                        ? 'Please enter at least ' + Math.max(1, field.minLength) + ' non-space characters.'
+                        : '');
+                });
 
                 if (pending || !form.checkValidity()) {
                     form.reportValidity();
